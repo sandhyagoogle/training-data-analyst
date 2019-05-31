@@ -49,6 +49,7 @@ REGION='us-central1'
 #Example('us-central1')
 BUCKET="rlongcp"
 MODEL="mymodel" 
+MODELDIR=gs://$BUCKET/$MODEL
 
 gcloud ml-engine jobs submit training $JOBNAME \
         --package-path=$PWD/rl_on_gcp/trainer \
@@ -62,7 +63,7 @@ gcloud ml-engine jobs submit training $JOBNAME \
         --start_train=5000\
         --buffer_size=500000\
         --save_model=True\
-        --model_dir='gs://BUCKET/MODEL'
+        --model_dir=$MODELDIR
 ```
 
 Train using HP tuning:
