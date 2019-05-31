@@ -45,10 +45,10 @@ Train model on cloud:
 ```
 # On cloud.
 JOBNAME=rl_breakout_$(date -u +%y%m%d_%H%M%S)
-REGION= REGION
-Example('us-central1')
-BUCKET=SAMPLE_BUCKET_NAME
-MODEL=SAMPLE_MODEL_PATH 
+REGION='us-central1'
+#Example('us-central1')
+BUCKET="rlongcp"
+MODEL="mymodel" 
 
 gcloud ml-engine jobs submit training $JOBNAME \
         --package-path=$PWD/rl_on_gcp/trainer \
