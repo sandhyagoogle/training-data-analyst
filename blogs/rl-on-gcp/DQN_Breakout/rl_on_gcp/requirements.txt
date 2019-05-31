@@ -31,6 +31,7 @@ python-dateutil==2.7.3
 pytz==2018.5
 requests==2.19.1
 scipy==1.1.0
+setuptools==39.1.0
 six==1.11.0
 subprocess32==3.5.2
 tensorboard==1.10.0
