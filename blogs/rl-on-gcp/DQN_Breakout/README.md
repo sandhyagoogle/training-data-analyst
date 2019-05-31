@@ -19,6 +19,8 @@ Install all of the dependencies in the requirements.txt :-
 
 ```
 pip install -r requirements.txt
+pip install --user -r rl_on_gcp/requirements.txt
+
 ```
 
 
