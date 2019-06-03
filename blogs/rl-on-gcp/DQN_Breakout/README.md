@@ -21,9 +21,6 @@ Install all of the dependencies in the requirements.txt :-
 pip install -r requirements.txt
 pip install --user -r rl_on_gcp/requirements.txt
 
-View tensorboard
-tensorboard --logdir=gs://<model path>
-
 ```
 
 
@@ -67,6 +64,9 @@ gcloud ml-engine jobs submit training $JOBNAME \
         --buffer_size=500000\
         --save_model=True\
         --model_dir=$MODELDIR
+        
+View tensorboard
+tensorboard --logdir=$MODELDIR
 ```
 
 Train using HP tuning:
