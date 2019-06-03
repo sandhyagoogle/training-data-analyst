@@ -52,7 +52,7 @@ REGION='us-central1'
 #Example('us-central1')
 BUCKET="rlongcp"
 MODEL="mymodel" 
-MODELDIR=gs://$BUCKET/$MODEL
+MODELDIR=gs://$BUCKET/$JOBNAME/$MODEL
 
 gcloud ml-engine jobs submit training $JOBNAME \
         --package-path=$PWD/rl_on_gcp/trainer \
