@@ -22,7 +22,7 @@ pip install -r requirements.txt
 pip install --user -r rl_on_gcp/requirements.txt
 
 View tensorboard
-tensorboard --logdir=gs://imilov-test/rl_job_20190424092300
+tensorboard --logdir=gs://<model path>
 
 ```
 
