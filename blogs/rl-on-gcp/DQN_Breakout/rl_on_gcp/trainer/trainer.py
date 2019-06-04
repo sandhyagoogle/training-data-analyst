@@ -218,7 +218,7 @@ def _parse_arguments(argv):
 
 def main():
   args = _parse_arguments(sys.argv[1:])
-  print(args)
+  print("test")
   _run(args)
 
 if __name__ == '__main__':
